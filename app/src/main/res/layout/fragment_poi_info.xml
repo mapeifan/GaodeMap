@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWithe"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ly_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/map_nav_select" />
+
+                <TextView
+                    android:id="@+id/poi_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="28dp"
+                    android:text="null"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/poi_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:text="null"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/poi_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="43dp"
+                android:text="null"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/go_there_bt"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/map_go_bg"
+            android:ems="1"
+            android:text="去 这 里"
+            android:textColor="@color/colorWithe"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_choice_mode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/ly_frame_line"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/bt_poi_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/map_bt_bottm_bg_l"
+                    android:text="默  认"
+                    android:textColor="@color/colorWithe"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/bt_poi_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/map_bt_bottm_bg_w"
+                    android:text="距离最短"
+                    android:textColor="@color/media_music_geshou_font_color"
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/bt_poi_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/map_bt_bottm_bg_w"
+                    android:text="避免拥堵"
+                    android:textColor="@color/media_music_geshou_font_color"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_nav_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="null"
+                    android:textColor="@color/media_music_name_font_color"
+                    android:textSize="27dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_contains_distance_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_nav_time"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_nav_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="230dp"
+                        android:text="null"
+                        android:textColor="@color/media_music_name_font_color"
+                        android:textSize="22dp" />
+
+                    <TextView
+                        android:id="@+id/tv_nav_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="400dp"
+                        android:text="null"
+                        android:textColor="@color/media_music_name_font_color"
+                        android:textSize="22dp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/bt_start_nav"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/rl_contains_distance_light"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/map_bt_bottm_bg_l"
+                    android:text="模拟导航"
+                    android:textColor="@color/colorWithe"
+                    android:textSize="25dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
