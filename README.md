@@ -19,7 +19,7 @@
 
 8、导航功能
 
-本demo是去年写的，今天跑了下代码是没有问题的（本应用基于大屏幕平板做的，未做适配屏幕）
+本demo是去年(2017年)写的，今天跑了下代码是没有问题的（本应用基于大屏幕平板做的，未做适配屏幕）
 
 效果图如下：
 ![效果图](https://github.com/mapeifan/GaodeMap/blob/master/app/src/main/res/GaodeDemo_%E4%B8%BB%E9%A1%B5.png)
